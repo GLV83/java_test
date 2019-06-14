@@ -1,0 +1,32 @@
+package com.company;
+
+public class Cat {
+
+
+    private  String catName;
+    private boolean hasTesseract;
+    private Tesseract tesseract;
+
+    public Cat (String name){
+        this.setName(name);
+        this.hasTesseract = false;
+        this.tesseract = null;
+    }
+
+    public void rename (String name) {this.setName(name);}
+
+    public String getName () {return this.catName;}
+
+    public void setName(String name) {this.catName = name;}
+
+    public boolean hasTesseract () {
+        if (tesseract == null)
+            return false;
+        else
+            return true;
+    }
+    public void putTesseract (Tesseract tesseract) { this.tesseract = tesseract;}
+    public void extractTesseract () {
+        this.tesseract = null;}
+
+}
