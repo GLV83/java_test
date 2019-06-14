@@ -1,0 +1,21 @@
+package com.company;
+import static java.lang.Math.*;
+
+
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+        Cat cat = new Cat ("42");
+        System.out.println(cat.getName());
+        cat.rename ("Pixel");
+        System.out.println(cat.getName());
+
+        System.out.println(cat.hasTesseract());
+        cat.putTesseract(new Tesseract());
+        System.out.println(cat.hasTesseract());
+        cat.extractTesseract();
+        System.out.println(cat.hasTesseract());
+    }
+
+}
